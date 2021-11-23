@@ -1,0 +1,1260 @@
+@media (max-width: 1024px) {
+    header .titleimg {
+        margin: 0 auto;
+        display: block;
+        width: 30%;
+        padding-top: 25%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* // ------------------------------- deco -------------------------------- */
+    .deco .snowbg {
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: 150px;
+        margin: 0 auto;
+        z-index: -1;
+    }
+
+    /* // ------------------------------- nav-------------------------------- */
+    .main-sel {
+        top: 0%;
+        width: 100%;
+        margin: 0 auto;
+        opacity: 0.9;
+        background-color: #1f1d62;
+        height: 80px;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+        position: fixed;
+        z-index: 10000;
+        /* border: rgb(105, 255, 165) 1px solid; */
+        display: flex;
+        align-items: center;
+    }
+
+    /* 街口logo */
+    .main-sel .logo {
+        width: 100px;
+        display: block;
+        padding-left: 50px;
+    }
+
+    /* navbar */
+    .topMain {
+        display: flex;
+        margin-left: auto;
+    }
+
+    .topMain ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* border: hotpink 1px solid; */
+    }
+
+    .topMain .socm {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .topMain ul li img {
+        width: 20px;
+        /* border: hotpink 1px solid; */
+    }
+
+    .topMain .socm :hover {
+        color: yellow;
+    }
+
+    .topMain a {
+        display: block;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 0 12px;
+        font-size: 1em;
+        /* border: #fff82a 2px solid; */
+    }
+
+    .topMain a:hover {
+        transition: 2s;
+        color: #eaff00;
+        /* background-color: #C9191D; */
+    }
+
+    /* header */
+    header {
+        text-align: center;
+        height: 500px;
+        position: relative;
+        /* border: #c22e29 2px solid; */
+    }
+
+    header img {
+        display: block;
+    }
+
+    /* animation動畫飛豬  */
+    header .pigreindeer {
+        position: absolute;
+        margin: 0 auto;
+        z-index: 3;
+        transform: rotate(15deg);
+        animation: pigreindeer 3s cubic-bezier(.15, .41, .6, .36)forwards;
+        /* border: #c22e29 2px solid; */
+    }
+
+    @keyframes pigreindeer {
+        0% {
+            opacity: 1;
+            position: absolute;
+            width: 800px;
+            top: 500px;
+            right: 100px;
+            margin: 0 auto;
+            z-index: 3;
+            transform: rotate(0deg);
+        }
+
+        100% {
+            opacity: 1;
+            position: absolute;
+            width: 1000px;
+            top: 0px;
+            right: 2000px;
+            z-index: 3;
+        }
+    }
+
+    header .pigreindeer2 {
+        position: absolute;
+        width: 30%;
+        top: 500px;
+        right: 50px;
+        margin: 0 auto;
+        z-index: 3;
+        opacity: 0;
+        animation-name: pigreindeer2;
+        animation-duration: 2s;
+        animation-delay: 3s;
+        animation-timing-function: ease;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        /* animation: pigreindeer2 8s ease forwards; */
+    }
+
+    @keyframes pigreindeer2 {
+        0% {
+            opacity: 1;
+            position: absolute;
+            width: 550px;
+            top: 350px;
+            right: 0px;
+            margin: 0 auto;
+            z-index: 3;
+        }
+
+        100% {
+            opacity: 1;
+            position: absolute;
+            width: 550px;
+            top: 350px;
+            right: 35px;
+            z-index: -1;
+        }
+    }
+
+    /* ------title----- */
+    header .titleimg {
+        margin: 0 auto;
+        display: block;
+        width: 30%;
+        padding-top: 70px;
+    }
+
+    header p {
+        padding: 5px;
+        padding-top: 20px;
+        font-size: 1em;
+        margin: 0 auto;
+        line-height: 1.6;
+    }
+
+    /* // ------------------------------- swiper -------------------------------- */
+    section {}
+
+    .swiperbg {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+        position: absolute;
+        right: 150px;
+    }
+
+    .swiper {
+        width: 80%;
+        height: 70%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: red;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .slider .piggift2 {
+        display: none;
+    }
+
+
+    /* // ------------------------------- cardarea -------------------------------- */
+
+    .cardarea .step1_imgtitle {
+        margin: 0 auto;
+        display: block;
+        width: 80%;
+        padding-bottom: 10px;
+    }
+
+    /* // ------------------------------- wheel of fortune -------------------------------- */
+    .game {
+        margin: 0 auto;
+        /* height: 645px; */
+        position: relative;
+        background-image: url(./img/snowbg4.png);
+        background-size: cover;
+        background-position: center bottom;
+        bottom: 0;
+        background-repeat: no-repeat;
+    }
+
+    .game .line {
+        margin: 0 auto;
+        display: block;
+        width: 80%;
+        top: 0px;
+        left: 80px;
+    }
+
+    .game .board {
+        margin: 0 auto;
+        display: block;
+        position: absolute;
+        top: 350px;
+        left: 35px;
+        z-index: -1;
+    }
+
+    .game .piggift {
+        display: none;
+    }
+
+    .game .gamerules {
+        margin: 0px auto;
+        display: block;
+        width: 80%;
+        padding-top: 2%;
+    }
+
+    /* // ------------------------------- dashboard -------------------------------- */
+    .designcard ul li {
+        /* flex-grow: 1; */
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .designcard ul li img {
+        display: block;
+        width: 200px;
+    }
+
+    .designcard .card1 {
+        padding-bottom: 0%;
+    }
+
+    .designcard .downloadbtn {
+        display: none;
+    }
+
+    /* // ------------------------------- 遊戲規則 -------------------------------- */
+    .gamerules {}
+
+    .gamerules img {
+        margin: 0 auto;
+        display: block;
+        width: 80%;
+    }
+
+    .gamerules h2 {
+        font-size: 2em;
+    }
+
+    .gamerules p {
+        text-align: left;
+        line-height: 1.6;
+    }
+
+    /* // ------------------------------- footer -------------------------------- */
+    footer {
+        color: #ffee00;
+        font-size: 1em;
+        line-height: 1;
+        text-align: center;
+    }
+}
+
+@media(max-width: 610px) {
+
+    /* // ------------------------------- playmusicbtn ------------------------------- */
+    .playmusicbtn {
+        z-index: 9999;
+        overflow: hidden;
+    }
+
+    .playmusicbtn a {}
+
+    .playmusicbtn a img {
+        position: fixed;
+        display: block;
+        top: 5em;
+        right: 10px;
+        width: 50px;
+        height: 50px;
+        z-index: 10000;
+    }
+
+    .playmusicbtn a img:hover {
+        opacity: 0.8;
+    }
+
+    /* // ------------------------------- 固定漂浮 tabbar ------------------------------- */
+    .tabbar {}
+
+    .tabbar ul {
+        width: 40px;
+        color: black;
+        border-radius: 20px;
+        background-color: #fff;
+        height: 15%;
+        opacity: 0.6;
+        text-align: center;
+        box-shadow: 2px 4px 4px black;
+        padding: 10px;
+        /* display: flex; */
+    }
+
+    .tabbar li:before {
+        content: "";
+        /* border-bottom: 1px solid black; */
+        display: block;
+        width: 50px;
+        height: 1px;
+        position: absolute;
+        top: 50;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        background-color: rgb(99, 99, 99);
+    }
+
+    .tabbar li:nth-last-child(-n+1)::before {
+        display: none;
+    }
+
+    .tabbar ul:hover {
+        opacity: 1;
+        box-shadow: 0px 0px 2px 6px #ffff00;
+    }
+
+    .tabbar ul li {
+        padding: 10px 0px;
+        position: relative;
+    }
+
+    .tabbar ul li p {
+        line-height: 0.8;
+        font-size: 0.8em;
+    }
+
+    .tabbar ul li a {
+        display: block;
+        color: #000000;
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    .tabbar ul li a:hover {
+        color: #c22e29;
+    }
+
+
+    /* // ------------------------------- nav web-------------------------------- */
+    .main-sel {
+        top: 0%;
+        width: 100%;
+        margin: 0 auto;
+        background-color: #1f1d62;
+        height: 80px;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+        position: fixed;
+        z-index: 10000;
+        /* border: rgb(105, 255, 165) 1px solid; */
+        display: none;
+        align-items: center;
+    }
+
+    /* 街口logo */
+    .main-sel .logo {
+        width: 100px;
+        display: block;
+        padding-left: 50px;
+    }
+
+    /* navbar */
+    .topMain {
+        display: none;
+        margin-left: auto;
+    }
+
+    .topMain ul {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        /* border: hotpink 1px solid; */
+    }
+
+    .topMain .socm {
+        padding-left: 30px;
+        padding-right: 20px;
+    }
+
+    .topMain ul li img {
+        width: 30px;
+        /* border: hotpink 1px solid; */
+    }
+
+    .topMain .socm :hover {
+        color: yellow;
+    }
+
+    .topMain a {
+        display: none;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 0 15px;
+        font-size: 1.2em;
+        /* border: #fff82a 2px solid; */
+    }
+
+    .topMain a:hover {
+        transition: 2s;
+        color: #eaff00;
+        /* background-color: #C9191D; */
+    }
+
+
+
+    /* // ------------------------------- nav mobile-------------------------------- */
+    .main-sel2 {
+        display: block;
+        top: 0%;
+        width: 100%;
+        margin: 0 auto;
+        opacity: 0.9;
+        background-color: #1f1d62;
+        height: 80px;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+        position: fixed;
+        z-index: 10000;
+        /* border: rgb(105, 255, 165) 1px solid; */
+        display: flex;
+        align-items: center;
+    }
+
+    /* 街口logo */
+    .main-sel2 .logo {
+        width: 100px;
+        display: block;
+        padding-left: 50px;
+    }
+
+    .hamburger {
+        display: block;
+        background: none;
+        position: absolute;
+        top: 10%;
+        right: 0;
+        line-height: 45px;
+        padding: 5px 15px 0px 15px;
+        color: rgb(255, 255, 255);
+        border: 0;
+        font-size: 1.4em;
+        font-weight: bold;
+        cursor: pointer;
+        outline: none;
+        z-index: 10000000000000;
+    }
+
+    .cross {
+        background: none;
+        position: absolute;
+        top: 10%;
+        right: 0;
+        padding: 7px 15px 0px 15px;
+        color: rgb(255, 255, 255);
+        border: 0;
+        font-size: 3em;
+        line-height: 65px;
+        font-weight: bold;
+        cursor: pointer;
+        outline: none;
+        z-index: 10000000000000;
+    }
+
+    /* navbar */
+    .menu {
+        z-index: 1000000;
+        font-weight: bold;
+        font-size: 0.8em;
+        width: 100%;
+        background: #f1f1f1;
+        /* position:absolute; */
+        text-align: center;
+        font-size: 12px;
+        display: block;
+    }
+
+    .menu ul {
+        display: block;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        list-style-image: none;
+    }
+
+    .menu li {
+        display: block;
+        padding: 15px 0 15px 0;
+        border-bottom: #dddddd 1px solid;
+    }
+
+    .menu li:hover {
+        display: block;
+        background: #ffffff;
+        padding: 15px 0 15px 0;
+        border-bottom: #dddddd 1px solid;
+    }
+
+    .menu ul li a {
+        text-decoration: none;
+        margin: 0px;
+        color: #666;
+    }
+
+    .menu ul li a:hover {
+        color: #666;
+        text-decoration: none;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: #666;
+    }
+
+    .menu a:hover {
+        text-decoration: none;
+        color: #666;
+    }
+}
+
+/* ==========================================375px================================ */
+
+@media(max-width: 414px) {
+
+    /* // ------------------------------- playmusicbtn ------------------------------- */
+    .playmusicbtn {
+        z-index: 9999;
+        overflow: hidden;
+    }
+
+    .playmusicbtn a {}
+
+    .playmusicbtn a img {
+        position: fixed;
+        display: block;
+        top: 5em;
+        right: 10px;
+        width: 50px;
+        height: 50px;
+        z-index: 10000;
+    }
+
+    .playmusicbtn a img:hover {
+        opacity: 0.8;
+    }
+
+    /* // ------------------------------- 固定漂浮 tabbar ------------------------------- */
+    .tabbar {}
+
+    .tabbar ul {
+        width: 40px;
+        color: black;
+        border-radius: 20px;
+        background-color: #fff;
+        height: 10%;
+        opacity: 0.6;
+        text-align: center;
+        box-shadow: 2px 4px 4px black;
+        padding: 10px;
+        /* display: flex; */
+    }
+
+    .tabbar li:before {
+        content: "";
+        /* border-bottom: 1px solid black; */
+        display: block;
+        width: 50px;
+        height: 1px;
+        position: absolute;
+        top: 50;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        background-color: rgb(99, 99, 99);
+    }
+
+    .tabbar li:nth-last-child(-n+1)::before {
+        display: none;
+    }
+
+    .tabbar ul:hover {
+        opacity: 1;
+        box-shadow: 0px 0px 2px 6px #ffff00;
+    }
+
+    .tabbar ul li {
+        padding: 10px 0px;
+        position: relative;
+    }
+
+    .tabbar ul li p {
+        line-height: 0.8;
+        font-size: 0.8em;
+    }
+
+    .tabbar ul li a {
+        display: block;
+        color: #000000;
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    .tabbar ul li a:hover {
+        color: #c22e29;
+    }
+
+    /* // ------------------------------- top ------------------------------- */
+    #to-top {
+        cursor: pointer;
+    }
+
+    .uptop {
+        position: fixed;
+        /* bottom: 50px; */
+        top: 150px;
+        right: 10px;
+        width: 100px;
+        z-index: 9999;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+
+    .uptop img {
+        width: 100%;
+        cursor: pointer;
+    }
+
+    /* // ------------------------------- nav web-------------------------------- */
+    .main-sel {
+        top: 0%;
+        width: 100%;
+        margin: 0 auto;
+        background-color: #1f1d62;
+        height: 80px;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+        position: fixed;
+        z-index: 10000;
+        /* border: rgb(105, 255, 165) 1px solid; */
+        display: none;
+        align-items: center;
+    }
+
+    /* 街口logo */
+    .main-sel .logo {
+        width: 120px;
+        display: block;
+        padding-left: 50px;
+    }
+
+    /* navbar */
+    .topMain {
+        display: none;
+        margin-left: auto;
+    }
+
+    .topMain ul {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        /* border: hotpink 1px solid; */
+    }
+
+    .topMain .socm {
+        padding-left: 30px;
+        padding-right: 20px;
+    }
+
+    .topMain ul li img {
+        width: 30px;
+        /* border: hotpink 1px solid; */
+    }
+
+    .topMain .socm :hover {
+        color: yellow;
+    }
+
+    .topMain a {
+        display: none;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 0 15px;
+        font-size: 1.2em;
+        /* border: #fff82a 2px solid; */
+    }
+
+    .topMain a:hover {
+        transition: 2s;
+        color: #eaff00;
+        /* background-color: #C9191D; */
+    }
+
+    /* // ------------------------------- nav mobile-------------------------------- */
+    .main-sel2 {
+        display: block;
+        top: 0%;
+        width: 100%;
+        margin: 0 auto;
+        opacity: 0.9;
+        background-color: #1f1d62;
+        height: 80px;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+        position: fixed;
+        z-index: 10000;
+        /* border: rgb(105, 255, 165) 1px solid; */
+        display: flex;
+        align-items: center;
+    }
+
+    /* 街口logo */
+    .main-sel2 .logo {
+        width: 120px;
+        display: block;
+        padding-left: 50px;
+    }
+
+    .hamburger {
+        display: block;
+        background: none;
+        position: absolute;
+        top: 10%;
+        right: 0;
+        line-height: 45px;
+        padding: 5px 15px 0px 15px;
+        color: rgb(255, 255, 255);
+        border: 0;
+        font-size: 1.4em;
+        font-weight: bold;
+        cursor: pointer;
+        outline: none;
+        z-index: 10000000000000;
+    }
+
+    .cross {
+        background: none;
+        position: absolute;
+        top: 10%;
+        right: 0;
+        padding: 7px 15px 0px 15px;
+        color: rgb(255, 255, 255);
+        border: 0;
+        font-size: 3em;
+        line-height: 65px;
+        font-weight: bold;
+        cursor: pointer;
+        outline: none;
+        z-index: 10000000000000;
+    }
+
+    /* navbar */
+    .menu {
+        z-index: 1000000;
+        font-weight: bold;
+        font-size: 0.8em;
+        width: 100%;
+        background: #f1f1f1;
+        /* position:absolute; */
+        text-align: center;
+        font-size: 12px;
+        display: block;
+    }
+
+    .menu ul {
+        display: block;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        list-style-image: none;
+    }
+
+    .menu li {
+        display: block;
+        padding: 15px 0 15px 0;
+        border-bottom: #dddddd 1px solid;
+    }
+
+    .menu li:hover {
+        display: block;
+        background: #ffffff;
+        padding: 15px 0 15px 0;
+        border-bottom: #dddddd 1px solid;
+    }
+
+    .menu ul li a {
+        text-decoration: none;
+        margin: 0px;
+        color: #666;
+    }
+
+    .menu ul li a:hover {
+        color: #666;
+        text-decoration: none;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: #666;
+    }
+
+    .menu a:hover {
+        text-decoration: none;
+        color: #666;
+    }
+
+    /* // ------------------------------- deco -------------------------------- */
+    .deco .snowbg {
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: 180px;
+        margin: 0 auto;
+        z-index: -1;
+    }
+
+    /* header */
+    header {
+        text-align: center;
+        height: 500px;
+        position: relative;
+        /* border: #c22e29 2px solid; */
+    }
+
+    header img {
+        display: block;
+    }
+
+    /* animation動畫飛豬  */
+    header .pigreindeer {
+        position: absolute;
+        margin: 0 auto;
+        z-index: 3;
+        transform: rotate(15deg);
+        animation: pigreindeer 3s cubic-bezier(.15, .41, .6, .36)forwards;
+    }
+
+    @keyframes pigreindeer {
+        0% {
+            opacity: 1;
+            position: absolute;
+            width: 300px;
+            top: 200px;
+            right: 100px;
+            margin: 0 auto;
+            z-index: 3;
+            transform: rotate(0deg);
+        }
+
+        100% {
+            opacity: 1;
+            position: absolute;
+            width: 300px;
+            top: 0px;
+            right: 2000px;
+            z-index: 3;
+        }
+    }
+
+    header .pigreindeer2 {
+        position: absolute;
+        width: 30%;
+        top: 500px;
+        right: 50px;
+        margin: 0 auto;
+        z-index: 3;
+        opacity: 0;
+        animation-name: pigreindeer2;
+        animation-duration: 2s;
+        animation-delay: 3s;
+        animation-timing-function: ease;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        /* animation: pigreindeer2 8s ease forwards; */
+    }
+
+    @keyframes pigreindeer2 {
+        0% {
+            opacity: 1;
+            position: absolute;
+            width: 250px;
+            top: 220px;
+            right: 0px;
+            margin: 0 auto;
+            z-index: 3;
+        }
+
+        100% {
+            opacity: 1;
+            position: absolute;
+            width: 250px;
+            top: 220px;
+            right: 35px;
+            z-index: -1;
+        }
+    }
+
+
+    /* ------title----- */
+    header .titleimg {
+        margin: 0 auto;
+        display: block;
+        width: 40%;
+        padding-top: 35%;
+    }
+
+    header p {
+        padding: 5px;
+        padding-top: 10px;
+        font-size: 0.8em;
+        margin: 0 auto;
+        line-height: 1.6;
+    }
+
+
+
+    /* // ------------------------------- swiper -------------------------------- */
+    .slider {
+        /* margin-top: 55%; */
+        margin-bottom: 10%;
+    }
+
+    .slider .piggift2 {
+        display: none;
+    }
+
+    .swiperbg {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+        position: absolute;
+        right: 150px;
+    }
+
+    .swiper {
+        width: 80%;
+        height: 70%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: red;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* // ------------------------------- wheel of fortune -------------------------------- */
+    .game {
+        margin: 0 auto;
+        /* height: 500px; */
+        position: relative;
+        background-image: url(./img/snowbg4.png);
+        background-size: cover;
+        background-position: center bottom;
+        bottom: 0;
+        background-repeat: no-repeat;
+    }
+
+    .game .line {
+        margin: 0 auto;
+        display: block;
+        width: 80%;
+        top: 0px;
+        left: 80px;
+    }
+
+    .game .board {
+        margin: 0 auto;
+        display: block;
+        position: absolute;
+        top: 350px;
+        left: 35px;
+        z-index: -1;
+    }
+
+    .game .piggift {
+        display: none;
+    }
+
+    .game .gamerules {
+        margin: 0px auto;
+        display: block;
+        width: 70%;
+        padding-top: 2%;
+    }
+
+    /* // ------------------------------- app -------------------------------- */
+    #app {
+        width: 250px;
+        /* height: 400px; */
+        /* padding-top: 800px; */
+        /* padding-bottom: 100px; */
+        margin: 0 auto;
+        position: relative;
+        /* border: #c22e29 2px solid; */
+    }
+
+    .marker {
+        position: absolute;
+        width: 40px;
+        left: 102px;
+        top: 0px;
+        z-index: 2;
+    }
+
+    .wheel {
+        width: 100%;
+        height: 100%;
+    }
+
+    .wheel2 {
+        position: absolute;
+        width: 248px;
+        height: 340px;
+        z-index: 1;
+        left: 3px;
+        top: 15px;
+    }
+
+    #app p {
+        font-size: 1.8em;
+        padding-top: 120px;
+        color: #000000;
+        text-align: center;
+        line-height: 1.4;
+    }
+
+    .button {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+        padding-top: 100px;
+        cursor: pointer;
+    }
+
+    .button:hover {
+        opacity: 0.8;
+        transition: 0.5s;
+    }
+
+    .blur {
+        animation: blur 10s;
+    }
+
+    @keyframes blur {
+        0% {
+            filter: blur(1.5px);
+        }
+
+        80% {
+            filter: blur(0.8px);
+        }
+
+        100% {
+            filter: blur(0px);
+        }
+    }
+
+    .display {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        line-height: 1;
+        /* padding: 20px; */
+        /* border: 5px solid black; */
+        border-radius: 10px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        margin: 10px auto;
+        color: black;
+        background-color: yellow;
+    }
+
+    /* // ------------------------------- dashboard -------------------------------- */
+    .designcard ul li {
+        /* flex-grow: 1; */
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .designcard ul li img {
+        display: block;
+        width: 200px;
+    }
+
+    .designcard .downloadbtn {
+        display: none;
+    }
+
+    /* // ------------------------------- 遊戲規則 -------------------------------- */
+
+
+    .game {
+        /* background: linear-gradient(#f5f6ff 0%, #ffeaea 80% , #ffc5c5 100%); */
+        margin: 0px auto;
+        position: relative;
+        background-image: url(./img/snowbg5.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom bottom;
+        bottom: 0;
+    }
+
+    .game .piggift {
+        display: none;
+    }
+
+    .gamerules img {
+        margin: 0 auto;
+        display: block;
+        width: 80%;
+    }
+
+    .gamerules h2 {
+        font-size: 1.4em;
+    }
+
+    .gamerules p {
+        text-align: left;
+        line-height: 1.6;
+    }
+
+    .game p {
+        padding: 3%;
+        text-align: center;
+        color: #1f1d62;
+        line-height: 1;
+        font-size: 0.8em;
+    }
+
+    .display {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        height: 80px;
+        border-radius: 10px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5em;
+        margin: 10px auto;
+        color: #442309;
+        background-color: yellow;
+        padding: 10px;
+        line-height: 1.2;
+        font-weight: 500;
+    }
+
+    /* // ------------------------------- dashboard -------------------------------- */
+    .cardarea .step1_imgtitle {
+        margin: 0 auto;
+        display: block;
+        width: 80%;
+        padding-bottom: 10px;
+    }
+
+    /* // ------------------------------- footer -------------------------------- */
+    footer {
+        color: #ffee00;
+        font-size: 0.6em;
+        line-height: 1;
+        text-align: center;
+    }
+}
+
+}
