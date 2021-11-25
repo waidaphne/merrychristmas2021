@@ -708,18 +708,7 @@
     /* // ------------------------------- 固定漂浮 tabbar ------------------------------- */
     .tabbar {}
 
-    .tabbar ul {
-        width: 15%;
-        color: #1f1d62;
-        border-radius: 20px;
-        background-color: #fff;
-        height: 12%;
-        opacity: 0.6;
-        text-align: center;
-        box-shadow: 2px 4px 4px #1f1d62;
-        padding: 10px;
-        /* display: flex; */
-    }
+    
 
     .tabbar li:before {
         content: "";
