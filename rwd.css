@@ -1,11 +1,23 @@
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
     header .titleimg {
         margin: 0 auto;
         display: block;
         width: 30%;
+        padding-top: 18%;
+    }
+}
+
+@media (max-width: 1024px) {
+    header .titleimg {
+        margin: 0 auto;
+        display: block;
+        width: 35%;
         padding-top: 25%;
     }
 }
+
+
+
 
 @media (max-width: 768px) {
 
@@ -238,6 +250,15 @@
         padding-bottom: 10px;
     }
 
+    .designcard p {
+        width: 60%;
+        margin: 0 auto;
+        padding: 2%;
+        color: #442309;
+        line-height: 1.2;
+        font-size: 1.2em;
+    }
+
     /* // ------------------------------- wheel of fortune -------------------------------- */
     .game {
         margin: 0 auto;
@@ -276,6 +297,57 @@
         display: block;
         width: 80%;
         padding-top: 2%;
+    }
+
+
+    /* The Modal (background) */
+    .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        padding-top: 20%;
+        /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Black w/ opacity */
+    }
+
+    /* Modal Content */
+    .modal_content {
+        background-color: rgba(255, 246, 151, 0.8);
+        margin: auto;
+        padding: 2%;
+        /* border: 1px solid #888; */
+        width: 70%;
+        border-radius: 20px;
+    }
+
+    /* The Close Button */
+    .close {
+        color: #442309;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        /* padding-right: 8%; */
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #ffff00;
+        text-decoration: none;
+        cursor: pointer;
     }
 
     /* // ------------------------------- dashboard -------------------------------- */
@@ -357,7 +429,7 @@
         color: black;
         border-radius: 20px;
         background-color: #fff;
-        height: 15%;
+        height: 20%;
         opacity: 0.6;
         text-align: center;
         box-shadow: 2px 4px 4px black;
@@ -559,19 +631,21 @@
         display: block;
         padding: 15px 0 15px 0;
         border-bottom: #dddddd 1px solid;
+        color: #1f1d62 ;
     }
 
     .menu li:hover {
         display: block;
-        background: #ffffff;
+        background-color: #1f1d62;
         padding: 15px 0 15px 0;
-        border-bottom: #dddddd 1px solid;
+        border-bottom: #1f1d62 1px solid;
+        color:yellow;
     }
 
     .menu ul li a {
         text-decoration: none;
         margin: 0px;
-        color: #666;
+        color: #1f1d62 ;
     }
 
     .menu ul li a:hover {
@@ -589,8 +663,23 @@
         color: #666;
     }
 }
+/* ========================================== iPhone13 428px ================================ */
+@media (max-width: 428px) {
+    header .titleimg {
+        margin: 0 auto;
+        display: block;
+        width: 35%;
+        padding-top: 30%;
+    }
+}
 
-/* ==========================================375px================================ */
+.game .gamerules {
+    margin: 0px auto;
+    display: block;
+    width: 100%;
+    padding-top: 2%;
+}
+/* ========================================== 414px================================ */
 
 @media(max-width: 414px) {
 
@@ -620,14 +709,14 @@
     .tabbar {}
 
     .tabbar ul {
-        width: 40px;
-        color: black;
+        width: 15%;
+        color: #1f1d62;
         border-radius: 20px;
         background-color: #fff;
-        height: 10%;
+        height: 15%;
         opacity: 0.6;
         text-align: center;
-        box-shadow: 2px 4px 4px black;
+        box-shadow: 2px 4px 4px #1f1d62;
         padding: 10px;
         /* display: flex; */
     }
@@ -850,16 +939,18 @@
     }
 
     .menu li:hover {
+
         display: block;
-        background: #ffffff;
+        background-color: #1f1d62;
         padding: 15px 0 15px 0;
-        border-bottom: #dddddd 1px solid;
+        border-bottom: #1f1d62 1px solid;
+        color:yellow;
     }
 
     .menu ul li a {
         text-decoration: none;
         margin: 0px;
-        color: #666;
+        color: #1f1d62 ;
     }
 
     .menu ul li a:hover {
@@ -879,7 +970,7 @@
 
     /* // ------------------------------- deco -------------------------------- */
     .deco .snowbg {
-        width: 100%;
+        width: 80%;
         display: block;
         position: absolute;
         top: 180px;
@@ -974,7 +1065,7 @@
         margin: 0 auto;
         display: block;
         width: 40%;
-        padding-top: 35%;
+        padding-top: 26%;
     }
 
     header p {
@@ -1072,9 +1163,32 @@
     .game .gamerules {
         margin: 0px auto;
         display: block;
-        width: 70%;
+        width: 100%;
         padding-top: 2%;
     }
+
+
+    /* // -------------------------------  igcta -------------------------------- */
+
+.game ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top: 3%;
+}
+
+.game .igcta{
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.game .igcta img{
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+}
 
     /* // ------------------------------- app -------------------------------- */
     #app {
@@ -1109,13 +1223,14 @@
         top: 15px;
     }
 
+    /* 
     #app p {
         font-size: 1.8em;
         padding-top: 120px;
         color: #000000;
         text-align: center;
         line-height: 1.4;
-    }
+    } */
 
     .button {
         display: block;
@@ -1163,6 +1278,21 @@
         margin: 10px auto;
         color: black;
         background-color: yellow;
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 5;
+        padding-top: 30%;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+
     }
 
     /* // ------------------------------- dashboard -------------------------------- */
@@ -1222,30 +1352,72 @@
         font-size: 0.8em;
     }
 
-    .display {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 150px;
-        height: 80px;
-        border-radius: 10px;
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1.5em;
-        margin: 10px auto;
+
+    /* The Modal (background) */
+    .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 5;
+        /* Sit on top */
+        padding-top: 80%;
+        /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Black w/ opacity */
+    }
+
+    /* Modal Content */
+    .modal_content {
+        background-color: rgba(255, 246, 151, 0.8);
+        margin: auto;
+        padding: 2%;
+        /* border: 1px solid #888; */
+        width: 80%;
+        border-radius: 20px;
+    }
+
+    /* The Close Button */
+    .close {
         color: #442309;
-        background-color: yellow;
-        padding: 10px;
-        line-height: 1.2;
-        font-weight: 500;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        /* padding-right: 8%; */
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #ffff00;
+        text-decoration: none;
+        cursor: pointer;
     }
 
     /* // ------------------------------- dashboard -------------------------------- */
     .cardarea .step1_imgtitle {
         margin: 0 auto;
         display: block;
-        width: 80%;
+        width: 100%;
         padding-bottom: 10px;
+    }
+
+    .designcard p {
+        width: 90%;
+        margin: 0 auto;
+        padding: 2%;
+        color: #442309;
+        line-height: 1.2;
+        font-size: 1em;
     }
 
     /* // ------------------------------- footer -------------------------------- */
@@ -1255,6 +1427,4 @@
         line-height: 1;
         text-align: center;
     }
-}
-
 }

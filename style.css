@@ -48,13 +48,13 @@ body {
 .tabbar {}
 
 .tabbar ul {
-    color: black;
+    color: #1f1d62;
     border-radius: 30px;
     background-color: #fff;
     height: 130px;
     opacity: 0.6;
     text-align: center;
-    box-shadow: 2px 4px 4px black;
+    box-shadow: 2px 4px 4px #1f1d62;
     /* display: flex; */
 }
 
@@ -757,6 +757,28 @@ header p {
 .designcard ul li .downloadbtn:hover {
     transition: all 0.5s;
     transform: translateY(-10px);
+}
+
+/* // -------------------------------  igcta -------------------------------- */
+
+.game ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top: 3%;
+}
+
+.game .igcta{
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.game .igcta img{
+    display: block;
+    margin: 0 auto;
+    width: 200px;
 }
 
 /* // ------------------------------- footer -------------------------------- */
