@@ -429,7 +429,7 @@
         color: black;
         border-radius: 20px;
         background-color: #fff;
-        height: 15%;
+        height: 16%;
         opacity: 0.6;
         text-align: center;
         box-shadow: 2px 4px 4px black;
@@ -708,8 +708,6 @@
     /* // ------------------------------- 固定漂浮 tabbar ------------------------------- */
     .tabbar {}
 
-    
-
     .tabbar li:before {
         content: "";
         /* border-bottom: 1px solid black; */
@@ -763,7 +761,7 @@
     .uptop {
         position: fixed;
         /* bottom: 50px; */
-        top: 150px;
+        top: 420px;
         right: 10px;
         width: 100px;
         z-index: 9999;
