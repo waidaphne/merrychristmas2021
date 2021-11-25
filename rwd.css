@@ -421,6 +421,13 @@
         opacity: 0.8;
     }
 
+    .game .gamerules {
+        margin: 0px auto;
+        display: block;
+        width: 80%;
+        padding-top: 2%;
+    }
+
     /* // ------------------------------- 固定漂浮 tabbar ------------------------------- */
     .tabbar {}
 
@@ -631,7 +638,7 @@
         display: block;
         padding: 15px 0 15px 0;
         border-bottom: #dddddd 1px solid;
-        color: #1f1d62 ;
+        color: #1f1d62;
     }
 
     .menu li:hover {
@@ -639,13 +646,13 @@
         background-color: #1f1d62;
         padding: 15px 0 15px 0;
         border-bottom: #1f1d62 1px solid;
-        color:yellow;
+        color: yellow;
     }
 
     .menu ul li a {
         text-decoration: none;
         margin: 0px;
-        color: #1f1d62 ;
+        color: #1f1d62;
     }
 
     .menu ul li a:hover {
@@ -663,6 +670,7 @@
         color: #666;
     }
 }
+
 /* ========================================== iPhone13 428px ================================ */
 @media (max-width: 428px) {
     header .titleimg {
@@ -671,14 +679,16 @@
         width: 35%;
         padding-top: 30%;
     }
+
+
+    .game .gamerules {
+        margin: 0px auto;
+        display: block;
+        width: 60%;
+        padding-top: 2%;
+    }
 }
 
-.game .gamerules {
-    margin: 0px auto;
-    display: block;
-    width: 100%;
-    padding-top: 2%;
-}
 /* ========================================== 414px================================ */
 
 @media(max-width: 414px) {
@@ -931,13 +941,13 @@
         background-color: #1f1d62;
         padding: 15px 0 15px 0;
         border-bottom: #1f1d62 1px solid;
-        color:yellow;
+        color: yellow;
     }
 
     .menu ul li a {
         text-decoration: none;
         margin: 0px;
-        color: #1f1d62 ;
+        color: #1f1d62;
     }
 
     .menu ul li a:hover {
@@ -1150,32 +1160,32 @@
     .game .gamerules {
         margin: 0px auto;
         display: block;
-        width: 100%;
+        width: 90%;
         padding-top: 2%;
     }
 
 
     /* // -------------------------------  igcta -------------------------------- */
 
-.game ul{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    padding-top: 3%;
-}
+    .game ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding-top: 3%;
+    }
 
-.game .igcta{
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    margin: 0 auto;
-    padding: 10px;
-}
+    .game .igcta {
+        /* display: flex; */
+        /* flex-wrap: wrap; */
+        margin: 0 auto;
+        padding: 10px;
+    }
 
-.game .igcta img{
-    display: block;
-    margin: 0 auto;
-    width: 150px;
-}
+    .game .igcta img {
+        display: block;
+        margin: 0 auto;
+        width: 150px;
+    }
 
     /* // ------------------------------- app -------------------------------- */
     #app {
